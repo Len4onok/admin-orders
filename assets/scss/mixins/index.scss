@@ -1,0 +1,43 @@
+@import 'breakpoints';
+@import 'container';
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  min-width: 100px;
+  padding: 10px;
+  border-radius: var(--borderRadius);
+  transition: var(--transition);
+}
+
+@mixin buttonWhite {
+  @include button;
+  background-color: var(--white);
+  &:hover {
+    background-color: var(--primaryColor);
+    color: var(--white);
+  }
+}
+
+@mixin buttonGrey {
+  @include button;
+  background-color: var(--lightGrey);
+  &:hover {
+    background-color: var(--white);
+    color: var(--primaryColor);
+  }
+}
+
+@mixin buttonGreyModal {
+  @include button;
+  width: 100%;
+  font-size: 14px;
+  color: var(--black);
+  background-color: var(--lightGrey);
+  &:hover {
+    background-color: var(--lightPrimaryColor);
+  }
+}
+
