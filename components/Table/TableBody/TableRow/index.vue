@@ -71,7 +71,6 @@ export default Vue.extend({
 </script>
 <style lang="scss" scoped>
 .table-row {
-  //padding: 0 0 0 14px;
   display: grid;
   align-items: center;
   min-width: 1000px;
